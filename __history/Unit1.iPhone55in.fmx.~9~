@@ -1,0 +1,121 @@
+inherited Form1_iPhone55in: TForm1_iPhone55in
+  ClientHeight = 716
+  ClientWidth = 414
+  DesignerMasterStyle = 3
+  inherited Panel1: TPanel
+    inherited ColorBox1: TColorBox
+      inherited Ahorcado: TText
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        inherited PLAY: TSpeedButton
+          Size.Height = 44.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+    end
+  end
+  inherited Panel2: TPanel
+    inherited SpeedButton1: TSpeedButton
+      Size.Height = 44.000000000000000000
+    end
+    inherited Text2: TText
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    inherited Panel4: TPanel
+      inherited ColorBox4: TColorBox
+        Position.Y = 8.000000000000000000
+      end
+      inherited Text3: TText
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited Text1: TText
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited Panel5: TPanel
+      inherited A: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited B: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited C: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited D: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited E: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited F: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited G: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited H: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited I: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited J: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited K: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited L: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited M: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited N: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited O: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited P: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited Q: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited R: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited S: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited T: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited U: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited V: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited W: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited X: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+      inherited Y: TSpeedButton
+        Size.Height = 44.000000000000000000
+      end
+    end
+    inherited Resetear: TSpeedButton
+      Size.Height = 44.000000000000000000
+    end
+    inherited Nueva_Palabra: TSpeedButton
+      Size.Height = 44.000000000000000000
+    end
+    inherited Panel6: TPanel
+      Position.X = -16.000000000000000000
+    end
+  end
+end

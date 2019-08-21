@@ -1,0 +1,219 @@
+inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited Panel1: TPanel
+    inherited ColorBox1: TColorBox
+      inherited Ahorcado: TText
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        inherited PLAY: TSpeedButton
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+    end
+  end
+  inherited Panel2: TPanel
+    inherited SpeedButton1: TSpeedButton
+      Size.Height = 48.000000000000000000
+    end
+    inherited Text2: TText
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    inherited Panel4: TPanel
+      inherited Text3: TText
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited Text1: TText
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited Panel5: TPanel
+      inherited Ac: TColorBox
+        Position.X = 64.000000000000000000
+        Position.Y = 24.000000000000000000
+        inherited A: TSpeedButton
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Bc: TColorBox
+        inherited B: TSpeedButton
+          Position.X = -352.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Cc: TColorBox
+        Position.Y = 80.000000000000000000
+        inherited C: TSpeedButton
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Dc: TColorBox
+        Position.Y = 16.000000000000000000
+        inherited D: TSpeedButton
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Ec: TColorBox
+        Position.Y = 48.000000000000000000
+        inherited E: TSpeedButton
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Lc: TColorBox
+        inherited L: TSpeedButton
+          Position.X = 168.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Kc: TColorBox
+        Position.Y = 88.000000000000000000
+        inherited K: TSpeedButton
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Gc: TColorBox
+        Position.Y = 48.000000000000000000
+        inherited G: TSpeedButton
+          Position.X = -8.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Fc: TColorBox
+        Position.Y = 8.000000000000000000
+        inherited F: TSpeedButton
+          Position.X = 184.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Hc: TColorBox
+        Position.Y = 104.000000000000000000
+        inherited H: TSpeedButton
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Ic: TColorBox
+        Position.Y = 128.000000000000000000
+        inherited I: TSpeedButton
+          Position.X = 280.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Pc: TColorBox
+        inherited P: TSpeedButton
+          Position.X = 72.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Oc: TColorBox
+        inherited O: TSpeedButton
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Wc: TColorBox
+        inherited W: TSpeedButton
+          Position.X = 239.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Vc: TColorBox
+        inherited V: TSpeedButton
+          Position.X = 208.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Uc: TColorBox
+        inherited U: TSpeedButton
+          Position.X = 176.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Tc: TColorBox
+        inherited T: TSpeedButton
+          Position.X = -216.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Rc: TColorBox
+        inherited R: TSpeedButton
+          Position.X = 48.000000000000000000
+          Position.Y = -16.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Sc: TColorBox
+        inherited S: TSpeedButton
+          Position.X = 120.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Qc: TColorBox
+        inherited Q: TSpeedButton
+          Position.X = 8.000000000000000000
+          Position.Y = 24.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Nc: TColorBox
+        inherited N: TSpeedButton
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Mc: TColorBox
+        inherited M: TSpeedButton
+          Position.X = 200.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Jc: TColorBox
+        inherited J: TSpeedButton
+          Position.X = 112.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Yc: TColorBox
+        inherited Y: TSpeedButton
+          Position.X = 296.000000000000000000
+          Position.Y = 130.000000000000000000
+        end
+      end
+      inherited Xc: TColorBox
+        inherited X: TSpeedButton
+          Position.X = 24.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Zc: TColorBox
+        inherited Z: TSpeedButton
+          Position.Y = 24.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+      end
+    end
+    inherited Resetear: TSpeedButton
+      Size.Height = 48.000000000000000000
+    end
+    inherited Nueva_Palabra: TSpeedButton
+      Size.Height = 48.000000000000000000
+    end
+    inherited Panel6: TPanel
+      inherited Panel7: TPanel
+        inherited ColorBox3: TColorBox
+          Position.X = 8.000000000000000000
+          Position.Y = 80.000000000000000000
+        end
+        inherited Panel8: TPanel
+          inherited Glyph1: TGlyph
+            Position.X = -8.000000000000000000
+            Position.Y = -8.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  inherited MediaPlayer1: TMediaPlayer [2]
+  end
+  inherited ImageList1: TImageList [3]
+  end
+  inherited ImageList2: TImageList [4]
+  end
+end

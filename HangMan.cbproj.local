@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/07/04 16:24:25.000.793,=C:\Users\Divertimento\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2019/07/04 16:24:31.000.300,=C:\Users\Divertimento\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2019/07/04 16:28:08.000.570,=C:\Users\Divertimento\Documents\Embarcadero\Studio\Projects\File1.h</Transaction>
+    <Transaction>2019/07/04 16:29:18.000.744,C:\Users\Divertimento\Documents\Embarcadero\Studio\Projects\File1.h=D:\_7°2°HangMan_\CHangMan.h</Transaction>
+    <Transaction>2019/07/04 16:29:23.000.369,C:\Users\Divertimento\Documents\Embarcadero\Studio\Projects\Unit1.cpp=D:\_7°2°HangMan_\Unit1.cpp</Transaction>
+    <Transaction>2019/07/04 16:29:23.000.369,C:\Users\Divertimento\Documents\Embarcadero\Studio\Projects\Unit1.fmx=D:\_7°2°HangMan_\Unit1.fmx</Transaction>
+    <Transaction>2019/07/04 16:29:23.000.369,C:\Users\Divertimento\Documents\Embarcadero\Studio\Projects\Unit1.h=D:\_7°2°HangMan_\Unit1.h</Transaction>
+    <Transaction>2019/07/04 16:29:25.000.436,C:\Users\Divertimento\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=D:\_7°2°HangMan_\Project1PCH1.h</Transaction>
+    <Transaction>2019/07/04 16:29:27.000.665,C:\Users\Divertimento\Documents\Embarcadero\Studio\Projects\Project1.cbproj=D:\_7°2°HangMan_\Project1.cbproj</Transaction>
+    <Transaction>2019/07/05 18:15:28.000.331,D:\_7°2°HangMan_\HangMan.cbproj=D:\_7°2°HangMan_\Project1.cbproj</Transaction>
+    <Transaction>2019/07/05 18:15:28.000.231,D:\_7°2°HangMan_\HangManPCH1.h=D:\_7°2°HangMan_\Project1PCH1.h</Transaction>
+  </Transactions>
+</BorlandProject>

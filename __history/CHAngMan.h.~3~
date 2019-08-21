@@ -1,0 +1,136 @@
+#ifndef _CHANGMAN_h
+#define _CHANGMAN_h
+#include <stdlib.h>
+#include <time.h>
+class CHangman
+{
+public:
+	CHangman(int l = 5);
+	bool EstaEnPalabra (char letra[1]);
+	char *ReemplarAste(char letra[1] );
+	bool Ganaste();
+	char *Get_Asterisco();
+	char *Get_Palabra();
+	int Get_position();
+	int Get_lives();
+	void restarVida(){
+	lives--;}
+	void resetearVida(){
+	lives=5;}
+	void resetearJuego(){
+	srand (time(NULL));
+	position= rand()%14;
+	strcpy(Palabra, Animales [position]);
+	strcpy(asteriscos,ConvertirAste());
+	}
+
+ private:
+  	char *ConvertirAste( );
+	char  Palabra[256];
+	char letra[1];
+	int lives;
+	char asteriscos[256];
+	char a[256];
+	static char *Animales[];
+	int position;
+
+
+
+};
+
+char * CHangman::Animales[] = {"GATO","PATO","OVEJA","CABALLO","VACA","GALLINA","POLLO","CHANCHO","PALOMA", "CONEJO","PERRO","TERO","LECHUZA","BURRO"};
+CHangman::CHangman(int l)
+{
+	lives= l;
+	srand (time(NULL));
+	position= rand()%14;
+	strcpy(Palabra, Animales [position]);
+	strcpy(asteriscos,ConvertirAste());
+	//strcpy(a,asteriscos);
+}
+ char *CHangman::Get_Asterisco()
+ {
+ return asteriscos;
+ }
+  char *CHangman::Get_Palabra()
+ {
+ return Palabra;
+ }
+ int CHangman::Get_position()
+ {
+ return position;
+ }
+  int CHangman::Get_lives()
+ {
+ return lives;
+ }
+
+char *CHangman::ConvertirAste()
+{
+int i;
+char aux[256];
+char ast[0]="*/0";
+int n=strlen(Palabra);
+for ( i=0; i < n; i++)
+ {
+  aux[i]=ast[0];
+}
+  aux[i]= '\0';
+return (aux);
+}
+
+
+bool CHangman::EstaEnPalabra (char letra[1])
+ {
+	 bool flag= false;
+	 int n=strlen(Palabra);
+	 for(int i=0; i<n;i++)
+		{
+			if(Palabra[i]== letra[0])
+				{
+					flag= true;
+					this->ReemplarAste(letra);
+				}
+		}
+	return flag;
+ }
+
+ char *CHangman::ReemplarAste(char letra[1] )
+	  {
+	  int i;
+
+
+int n=strlen(Palabra);
+for ( i=0; i < n; i++)
+ {
+	if(Palabra[i]==letra[0])
+	{
+		asteriscos[i]=letra[0];
+	}
+
+}
+  asteriscos[i]= '\0';
+return (asteriscos);
+
+	  }
+
+ bool CHangman::Ganaste()
+ {
+int i;
+
+ bool flag = true;
+int n=strlen(asteriscos);
+for ( i=0; i < n; i++)
+ {
+	if(asteriscos[i]=='*')
+	{
+	flag = false;
+	}
+ }
+	  return flag;
+
+
+ }
+
+
+#endif

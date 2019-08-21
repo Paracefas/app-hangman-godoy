@@ -1,0 +1,334 @@
+//---------------------------------------------------------------------------
+
+#include <fmx.h>
+#pragma hdrstop
+
+
+#include "Unit1.h"
+#include "CHAngMan.h"
+#include<string>
+
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.fmx"
+#pragma resource ("*.LgXhdpiPh.fmx", _PLAT_ANDROID)
+#pragma resource ("*.iPhone55in.fmx", _PLAT_IOS)
+#pragma resource ("*.LgXhdpiTb.fmx", _PLAT_ANDROID)
+
+TForm1 *Form1;
+
+  bool Presionado=false;
+  char letra[1];
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+	array[0]= Ac;
+	array[1]= Bc;
+	array[2]= Cc;
+	array[3]= Dc;
+	array[4]= Ec;
+	array[5]= Fc;
+	array[6]= Gc;
+	array[7]= Hc;
+	array[8]= Ic;
+	array[9]= Jc;
+	array[10]= Kc;
+	array[11]= Lc;
+	array[12]= Mc;
+	array[13]= Nc;
+	array[14]= Oc;
+	array[15]= Pc;
+	array[16]= Qc;
+	array[17]= Rc;
+	array[18]= Sc;
+	array[19]= Tc;
+	array[20]= Uc;
+	array[21]= Vc;
+	array[22]= Wc;
+	array[23]= Xc;
+	array[24]= Yc;
+	array[25]= Zc;
+
+
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::SpeedButton1Click(TObject *Sender)
+{
+
+//strcpy(Palabra,"AAAAA");
+
+	Panel8->Visible=true;
+	Text1->Visible=true;
+	Text1->Text= Hangman.Get_Asterisco();       //asterisco
+	Text2->Text= Hangman.Get_Palabra();             //get palabra
+	Glyph1->ImageIndex= Hangman.Get_position();       //imagen de index
+	Text3->Text= Hangman.Get_lives();          //texto de vidas
+	SpeedButton1-> Visible=false;          //boton
+	Nueva_Palabra->Visible= true;   //boton
+	Resetear->Visible=true;
+	Text3->Visible=true;
+	Presionado=true;
+	//boton
+	//Resetear->Position->X=300;
+	//Resetear->Position->Y=560;
+	//Resetear->Size->Width=300;
+	string animal = Animales[0];
+	string palabra = ( animal + ".mp3");
+	MediaPlayer1->FileName= palabra;
+	MediaPlayer1->Play();
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::AClick(TObject *Sender)
+{
+	actualizar('A', A, Ac);
+}
+
+void TForm1::actualizar (char letraIngreso, TSpeedButton *button, TColorBox *Elcolor)
+{
+	//strcpy(letra,letraIngreso);
+	if(Presionado==true){
+	if( Hangman.EstaEnPalabra(&letraIngreso))//letra))
+	{
+		//strcpy(asteriscos,Hangman.ReemplarAste(Palabra,a,letra));
+		//Ahora lo hace CHANGMAN
+		Text1->Text= Hangman.Get_Asterisco();
+		}
+	else
+	{
+		Hangman.restarVida();
+		Text3->Text=Hangman.Get_lives();
+	}
+	if(Hangman.Ganaste() )
+	{
+	 ShowMessage ("Ganaste");
+	}
+
+	if(Hangman.Get_lives()<=0)
+	{
+
+	 ShowMessage ("Perdiste");
+	// button->Visible=false;
+	 Text3->Visible=false;
+	}
+	//button->Visible=false;
+	Elcolor->Visible=false;
+	}
+}
+void TForm1::reset(){
+	Hangman.resetearJuego();
+	Panel8->Visible=false;
+	Glyph1->Visible=false;                         //imagen
+	Text1->Visible=false;      //asterisco
+	Text2->Visible=false;             //get palabra
+	Text3->Visible=false;          //texto de vidas
+	SpeedButton1-> Visible=true;          //boton
+	Nueva_Palabra->Visible= false;   //boton
+	Resetear->Visible=false;
+	 Presionado=false;
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::BClick(TObject *Sender)
+{
+	 actualizar('B', B, Bc);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::CClick(TObject *Sender)
+{
+	   actualizar('C', C, Cc);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::DClick(TObject *Sender)
+{
+		actualizar('D', D,Dc);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::EClick(TObject *Sender)
+{
+	actualizar('E', E, Ec);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::GClick(TObject *Sender)
+{
+	actualizar('G', G, Gc);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::FClick(TObject *Sender)
+{
+	actualizar('F', F, Fc);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::HClick(TObject *Sender)
+{
+	actualizar('H', H, Hc);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::IClick(TObject *Sender)
+{
+actualizar('I', I, Ic);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::JClick(TObject *Sender)
+{
+actualizar('J', J, Jc);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::KClick(TObject *Sender)
+{
+actualizar('K', K, Kc);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::LClick(TObject *Sender)
+{
+actualizar('L', L, Lc);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::MClick(TObject *Sender)
+{
+actualizar('M', M, Mc);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::NClick(TObject *Sender)
+{
+actualizar('N', N, Nc);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::OClick(TObject *Sender)
+{
+actualizar('O', O, Oc);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::PClick(TObject *Sender)
+{
+actualizar('P', P, Pc);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::QClick(TObject *Sender)
+{
+actualizar('Q', Q, Qc);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::RClick(TObject *Sender)
+{
+actualizar('R', R, Rc);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::SClick(TObject *Sender)
+{
+actualizar('S', S, Sc);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::TClick(TObject *Sender)
+{
+actualizar('T', T, Tc);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::UClick(TObject *Sender)
+{
+actualizar('U', U, Uc);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::VClick(TObject *Sender)
+{
+actualizar('V', V, Vc);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::WClick(TObject *Sender)
+{
+actualizar('W', W, Wc);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::XClick(TObject *Sender)
+{
+actualizar('X', X, Xc);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::YClick(TObject *Sender)
+{
+actualizar('Y', Y, Yc);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::ZClick(TObject *Sender)
+{
+actualizar('Z', Z, Zc);
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TForm1::PLAYClick(TObject *Sender)
+{
+	Panel1->Visible=false;
+    Panel2->Visible=true;
+}
+//---------------------------------------------------------------------------
+
+
+void TForm1::resetLetras(TColorBox *botonColor){
+	botonColor->Visible=true;
+}
+
+
+
+
+void __fastcall TForm1::ResetearClick(TObject *Sender)
+{
+	Hangman.resetearVida();
+	Text3->Text= Hangman.Get_lives();
+
+	for (int i = 0; i < 26; i++) {
+
+		 resetLetras(array[i]);
+
+	}
+
+	reset();
+
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TForm1::Nueva_PalabraClick(TObject *Sender)
+{
+	Hangman.resetearJuego();
+	Text1->Text= Hangman.Get_Asterisco();       //asterisco
+	Text2->Text= Hangman.Get_Palabra();             //get palabra
+	Glyph1->ImageIndex= Hangman.Get_position();       //imagen de index
+	for (int i = 0; i < 26; i++) {
+
+		 resetLetras(array[i]);
+
+	}
+
+
+}
+//---------------------------------------------------------------------------
+
+
+
+

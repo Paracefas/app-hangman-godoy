@@ -1,0 +1,14 @@
+.\assets\internal\GALLINA.mp3
+.\assets\internal\CHANCHO.mp3
+.\assets\internal\OVEJA.mp3
+.\assets\internal\PERRO.mp3
+.\assets\internal\PATO.mp3
+.\assets\internal\CONEJO.mp3
+.\assets\internal\GATO.mp3
+.\assets\internal\LECHUZA.mp3
+.\assets\internal\BURRO.mp3
+.\assets\internal\POLLO.mp3
+.\assets\internal\VACA.mp3
+.\assets\internal\PALOMA.mp3
+.\assets\internal\TERO.mp3
+.\assets\internal\CABALLO.mp3

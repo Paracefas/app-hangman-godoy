@@ -1,0 +1,33 @@
+inherited Form1_LgXhdpiTb: TForm1_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited Panel1: TPanel
+    inherited ColorBox1: TColorBox
+      inherited Ahorcado: TText
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        inherited PLAY: TSpeedButton
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+    end
+  end
+  inherited Panel2: TPanel
+    inherited Text2: TText
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    inherited Panel4: TPanel
+      inherited Text3: TText
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited Text1: TText
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited Panel5: TPanel
+      inherited A: TSpeedButton
+        Size.Height = 48.000000000000000000
+      end
+    end
+  end
+end
